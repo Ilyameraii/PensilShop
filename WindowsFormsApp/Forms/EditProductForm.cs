@@ -124,10 +124,9 @@ namespace PensilShop.Forms
                 catch
                 {
                     MessageBox.Show("Не удалось установить новую фотографию");
-                    return;
                 }
 
-                if (string.IsNullOrWhiteSpace(product.Photo))
+                if (!string.IsNullOrWhiteSpace(product.Photo))
                 {
                     try
                     {
